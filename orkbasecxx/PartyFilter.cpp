@@ -18,9 +18,9 @@
 #include "Utils.h"
 
 #ifdef WIN32
-# ifndef snprintf
-#  define snprintf _snprintf
-# endif
+# //ifndef snprintf
+#  //define snprintf _snprintf
+# //endif
 #endif
 
 bool PartyFilterActive(void)

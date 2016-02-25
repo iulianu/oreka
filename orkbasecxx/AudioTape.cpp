@@ -27,6 +27,7 @@
 #include "ConfigManager.h"
 #include "PartyFilter.h"
 #include "ConfigManager.h"
+#include <iterator>
 
 AudioTapeDescription::AudioTapeDescription()
 {

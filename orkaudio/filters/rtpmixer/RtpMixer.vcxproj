@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -17,13 +17,13 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -114,7 +114,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>C:\DevExtVC12\winpcap\WpdPack\Include;../..;../../../OrkBaseCxx;C:\DevExtVC12\boost\boost_1_32_0;C:\DevExtVC12\ACE_wrappers;C:\DevExtVC12\xerces\src;../Common;C:\DevExtVC12\Log4cxx\log4cxx-0.10.0\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\DevExt\winpcap\WpdPack\Include;../..;../../../OrkBaseCxx;C:\devExt\boost\boost_1_32_0;C:\devExt\ACE_wrappers;C:\DevExt\xerces\src;../Common;C:\DevExt\Log4cxx\log4cxx-0.10.0\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;RtpMixer_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -132,10 +132,10 @@
       <Culture>0x0809</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>packet.lib;wpcap.lib;wininet.lib;OrkBase.lib;ace.lib;log4cxx.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>packet.lib;wpcap.lib;wininet.lib;OrkBase.lib;aced.lib;log4cxx.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\ReleaseVC12\RtpMixer.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>C:\DevExtVC12\winpcap\WpdPack\Lib;../../../OrkBaseCxx/ReleaseVC12;C:\DevExtVC12\Log4cxx\log4cxx-0.10.0\projects\Release;C:\DevExtVC12\ACE_wrappers\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\DevExt\winpcap\WpdPack\Lib;../../../OrkBaseCxx/Release;C:\DevExt\Log4cxx\log4cxx-0.10.0\projects\Release;C:\DevExt\ACE_wrappers\lib;C:\devext\Log4cxx\log4cxx-0.10.0\projects\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\ReleaseVC12\RtpMixer.pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>

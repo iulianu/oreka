@@ -14,9 +14,9 @@
 #include "ConfigManager.h"
 #include "Reporting.h"
 
-#ifdef WIN32
-#define snprintf _snprintf
-#endif
+//#ifdef WIN32
+//#define snprintf _snprintf
+//#endif
 
 void OrkTrack::Initialize()
 {

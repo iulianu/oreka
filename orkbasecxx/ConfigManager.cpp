@@ -26,9 +26,9 @@
 #define CONFIG_FILE_NAME "config.xml"
 #define ETC_CONFIG_FILE_NAME "/etc/orkaudio/config.xml"
 
-#ifdef WIN32
-# define snprintf _snprintf
-#endif
+//#ifdef WIN32
+//# define snprintf _snprintf
+//#endif
 
 ConfigManager* ConfigManager::m_singleton = NULL;
 

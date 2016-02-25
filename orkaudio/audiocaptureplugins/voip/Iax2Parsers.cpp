@@ -7,7 +7,7 @@
  *
  */
 #ifdef WIN32
-#define snprintf _snprintf
+//#define snprintf _snprintf
 #endif
 
 #include "Iax2Parsers.h"
